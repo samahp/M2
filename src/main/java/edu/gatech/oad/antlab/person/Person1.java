@@ -52,10 +52,5 @@ public class Person1 {
 	  return name + calc(input);
 	}
 
-    public static void main(String[] args) {
-        Person1 p1 = new Person1("Somayeh Hosseini Porgham");
-        System.out.println(p1.name);
-
-        p1.calc("gtshp7");
-    }
+    
 }
