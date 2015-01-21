@@ -39,7 +39,7 @@ public class Person2 {
         List<Character> random = Arrays.asList(chars);
         Collections.shuffle(random);
         String result = "";
-        for (int i = 0; i < random.size(); i++) {
+        for (int i = 0; i < random.size(); i++){
             result += random.get(i);
         }
         return result;
