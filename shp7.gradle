@@ -1,5 +1,5 @@
 //Set a default task, so if I don't give a task, this (these) will be executed
-defaultTasks  'hello', 'jar'
+defaultTasks  'build', 'hello', 'jar'
 
 //Import a bunch of java related tasks like compileJava, compileJavaTest, clean, javadoc, jar
 apply plugin: 'java'
@@ -18,7 +18,7 @@ version = '1.0'
 jar {
     manifest {
         attributes 'Implementation-Title': 'Gradle Quickstart', 'Implementation-Version': version ,
-        'Main-Class' : 'src.main.java.edu.gatech.oad.antlab.pkg1.AntLabMain'
+        'Main-Class' : 'edu.gatech.oad.antlab.pkg1.AntLabMain', 'Class-Path' : '../../lib/resources.jar'
     }
 }
 dependencies {
