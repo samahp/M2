@@ -1,14 +1,9 @@
 //Set a default task, so if I don't give a task, this (these) will be executed
-defaultTasks  'build', 'hello', 'jar'
+defaultTasks  'build', 'jar'
 
 //Import a bunch of java related tasks like compileJava, compileJavaTest, clean, javadoc, jar
 apply plugin: 'java'
 
-
-//Define a simple task ourselves to print a message
-task hello << {
-      println 'Hello World!'
-}
 
 //Set up some variables (properties)
 sourceCompatibility = 1.7
