@@ -31,7 +31,7 @@ public class Person2 {
      * @param input the string to be modified
      * @return the modified string
      */
-    private String calc(String input) {
+    private String calc(String input){
         Character[] chars = new Character[input.length()];
         for (int i = 0; i < chars.length; i++) {
             chars[i] = input.charAt(i);
@@ -39,7 +39,7 @@ public class Person2 {
         List<Character> random = Arrays.asList(chars);
         Collections.shuffle(random);
         String result = "";
-        for (int i = 0; i < random.size(); i++) {
+        for (int i = 0; i < random.size(); i++){
             result += random.get(i);
         }
         return result;
