@@ -30,13 +30,13 @@ public class Person4 {
      * @return the modified string
      */
     private String calc(String input) {
-      for (int i = 0; i < input.length; i++) {
-        char a = 'input[i]';
-        a++;
-        input[i] = a;
-      }
-      //Person 4 put your implementation here
-      return null;
+        String newString = "";
+        for (int i = 0; i < input.length(); i++) {
+            char term = input.charAt(i);
+            term++;
+            newString+=term;
+        }
+        return newString;
     }
     
     /**
@@ -50,6 +50,7 @@ public class Person4 {
     public String toString(String input) {
       return name + calc(input);
     }
+
 
 }
 
